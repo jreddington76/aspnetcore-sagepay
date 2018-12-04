@@ -11,10 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\Home\CardIdentifier.cshtml">
+    <Content Update="Views\Payment\CardIdentifier.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Views\Home\MerchantSessionsKey.cshtml">
+    <Content Update="Views\Payment\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Payment\MerchantSessionsKey.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>

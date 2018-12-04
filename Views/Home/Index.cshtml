@@ -4,31 +4,10 @@
     ViewData["Title"] = "Home Page";
 }
 
-<form asp-controller="Home" asp-action="Index" method="post">
-    <div asp-validation-summary="All" class="text-danger"></div>
+<form asp-controller="Payment" asp-action="Index" method="get">
 
-    <div class="form-group">
-        <label asp-for="CardholderName"></label>
-        <input asp-for="CardholderName" class="form-control" aria-describedby="nameHelp" value="Card Holder" />
-        <small id="nameHelp" class="form-text text-muted">Please enter the name as it appears on the card.</small>
-        <span asp-validation-for="CardholderName" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="CardNumber"></label>
-        <input asp-for="CardNumber" class="form-control" aria-describedby="cardNumberHelp" value="4929000000006" />
-        <small id="cardNumberHelp" class="form-text text-muted">This is the 16 digit number.</small>
-        <span asp-validation-for="CardNumber" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="ExpiryDate"></label>
-        <input asp-for="ExpiryDate" class="form-control" value="1120" placeholder="MMYY" />
-        <span asp-validation-for="ExpiryDate" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="SecurityCode"></label>
-        <input asp-for="SecurityCode" class="form-control" value="123" aria-describedby="securityCodeHelp" />
-        <small id="securityCodeHelp" class="form-text text-muted">This is the last 3 digits on the reverse of the card.</small>
-        <span asp-validation-for="SecurityCode" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <p>
+        This site provides an introduction to taking payments using the SagePay gateway.  Click Continue to get started
+    </p>
+    <button type="submit" class="btn btn-primary">Continue</button>
 </form>

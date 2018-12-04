@@ -9,8 +9,8 @@
 
     <div class="form-group">
         <label asp-for="CardholderName"></label>
-        <input asp-for="CardholderName" class="form-control" aria-describedby="nameHelp" value="sandBox" />
-        <small id="nameHelp" class="form-text text-muted">Please enter the name as it appears on the card.</small>
+        <input asp-for="CardholderName" class="form-control" aria-describedby="CardholderName-description" value="sandBox" />
+        <span asp-description-for="CardholderName" class="form-text text-muted" />
         <span asp-validation-for="CardholderName" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
