@@ -1,0 +1,17 @@
+﻿@model aspnetcore_sagepay.Models.CardholderModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-controller="Home" asp-action="Index" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="CardholderName"></label>
+        <input asp-for="CardholderName" class="form-control" aria-describedby="nameHelp" value="sandBox" />
+        <small id="nameHelp" class="form-text text-muted">Please enter the name as it appears on the card.</small>
+        <span asp-validation-for="CardholderName" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
